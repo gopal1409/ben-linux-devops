@@ -1,0 +1,6 @@
+###init 
+sudo -i
+ 4  cd /etc/
+    5  ls init*.*
+  
+
