@@ -3,4 +3,9 @@ sudo -i
  4  cd /etc/
     5  ls init*.*
   
-
+####init machine
+init 1
+init 2
+init 3
+init 5
+init 6
