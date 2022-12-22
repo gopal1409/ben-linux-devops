@@ -22,3 +22,28 @@ init 0
    30  mkdir .prop
    31  ls
    32  ls -la
+###imp directory structure
+36  cd /proc
+   37  ls
+   38  cat cpuinfo
+   39  cat devices
+   40  ls
+   41  cat diskstats
+   42  cd driver
+   43  ls
+   44  cat rtc
+   45  cd ..
+   46  cd /root
+   47  ls
+   48  cd /sbin
+   49  ls
+   50  iptables
+   51  iptables --help
+   52  cd /srv
+ 66  adduser tom
+   67  ls
+ 69  cd /var
+   70  ls
+   71  cd log
+   72  ls
+   73  cat auth.log
