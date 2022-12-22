@@ -47,3 +47,18 @@ init 0
    71  cd log
    72  ls
    73  cat auth.log
+###file permission in linux
+mkdir test
+touch proc
+ls
+ls -l
+sudo -i
+###create a new user
+adduser jerry
+exit
+####login as jerry
+su jerry
+##
+cd /tmp
+touch test
+ls -la
