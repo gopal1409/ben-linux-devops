@@ -10,3 +10,15 @@ init 3
 init 5
 init 6
 init 0
+
+####how to create an hidden file
+23  mkdir test
+   24  cd test/
+   25  touch DS_Store
+   26  touch calcy.py
+   27  ls
+   28  touch .property
+   29  ls
+   30  mkdir .prop
+   31  ls
+   32  ls -la
