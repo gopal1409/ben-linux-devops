@@ -1,0 +1,7 @@
+###first create the user
+  166  adduser test
+  167  su test
+###after login
+cd /tmp
+touch newfile
+ls -la
