@@ -1,0 +1,21 @@
+ 235  mkdir filterlog
+  236  cd filterlog/
+nano task.sh
+###inside the above mentioned shell file add this task
+#!/bin/bash
+position=0
+length=10
+PREVDATE=`date -d "-1 days" +"%d-%m-%Y"`
+while IFS='' read -r line || [[ -n "$line" ]]; do
+        LOGDATE=${line:position:length}
+        if [ "$PREVDATE" = "$LOGDATE" ]; then
+                echo $line >> $PREVDATE.log
+        fi;     
+done < "$1"
+
+####once done we want this job to be run on a particular interva
+crontab -e
+######
+####it will open a schedule
+* 23 * * *
+#####this schedule your task
