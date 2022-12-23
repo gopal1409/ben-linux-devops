@@ -1,0 +1,8 @@
+ 136  apt install apache2
+  138  apt list apache2
+  139  apt list mysql
+  140  apt list ntpd
+  141  apt update apache2
+  142  apt update
+  143  apt list --upgradable
+  144  apt remove apache2
