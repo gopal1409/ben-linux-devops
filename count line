@@ -1,0 +1,9 @@
+ 252  cd /var/log/
+  253  ls
+  254  wc boot.log
+  255  grep root /etc/*
+  256  grep root /etc/*grep -l root /etc/*
+  257  ls
+  258  cat boot.log
+  259  wc -l boot.log
+  260  sed -n '=' boot.log
