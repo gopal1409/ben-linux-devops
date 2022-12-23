@@ -7,3 +7,33 @@
   143  apt list --upgradable
   144  apt remove apache2
   apt list
+###how to install package in redhat
+   1  yum install firefox
+    2  yum list apache2
+    3  yum list httpd
+    4  yum list openssh
+    5  yum search mysql
+    6  yum search mariadb
+    7  yum search docker
+    8  yum install httpd
+    9  yum update httpd
+   10  yum info firefox
+   11  yum remove firefox
+   12  yum group list
+   13  yum group install "Development Tools"
+   14  dnf install mysql-server
+   15  cd /etc/
+   16  ls yum*.*
+   17  cd yum.repos.d/
+   18  ls
+   19  cat  redhat-rhui-client-config.repo
+   20  dnf install mysql-server
+   21  rpm install https://repo.mysql.com//mysql80-community-release-el9-1.noarch.rpm
+   22  rpm install
+   23  wget https://repo.mysql.com//mysql80-community-release-el9-1.noarch.rpm
+   24  yum install wget
+   25  wget https://repo.mysql.com//mysql80-community-release-el9-1.noarch.rpm
+   26  ls
+   27  rpm install mysql80-community-release-el9-1.noarch.rpm
+   28  yum group update "Development Tools"
+   29  yum group remove "Development Tools"
