@@ -37,3 +37,20 @@
    27  rpm install mysql80-community-release-el9-1.noarch.rpm
    28  yum group update "Development Tools"
    29  yum group remove "Development Tools"
+   
+   ####how to create our own package in debian system
+    154  apt install build-essential binutils lintian dh-make devscripts
+  155  apt-cache search hello
+  156  mkdir helloworld && mkdir helloworld/DEBIAN
+ 158  mkdir -p helloworld/usr/local/bin cp /usr/local/bin/helloworld.sh helloworld/usr/local/bin
+ 160  nano helloworld/DEBIAN/control
+ #inside the above mentioned file all this lines
+ Package: helloworld
+Version: 0.2
+Maintainer: King Kong
+Architecture: alll
+Description: helloworld
+####to save the above mentioned file in a nano editro Press Ctrl x the press y and enter
+  161  dpkg-deb --build helloworld
+  162  dpkg -i helloworld.deb
+
