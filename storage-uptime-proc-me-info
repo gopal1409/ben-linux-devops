@@ -1,0 +1,6 @@
+280  uptime
+  281  df -h
+  282  cat /proc/cpuinfo
+  283  cat /proc/meminfo
+  284  history
+  285  uname -a
