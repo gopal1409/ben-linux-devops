@@ -5,3 +5,14 @@
 cd /tmp
 touch newfile
 ls -la
+###working more on groups
+169  groupadd -g 800 admins
+  170  cat /etc/group
+  172  usermod -a -G admins tom
+  173  cat /etc/group
+  174  groupmod -n admins dev
+  175  groupmod -n dev admins
+  176  groupmod -n dev1 admins
+  177  cat /etc/group
+  178  groupdel dev1
+  179  cat /etc/group
