@@ -1,0 +1,23 @@
+ 204  apt update
+ 213  apt install mariadb-server mariadb-client -y
+  214  systemctl status mariadb
+  215  systemctl start mariadb
+  216  systemctl status mariadb
+  217  mysql_secure_installation
+  218  mysql -u root -p
+###this will install mysql
+create database test;
+show database;
+exit
+#####now we will create a backup plan
+ 220  mkdir /root/mysql_dumps_all
+ 223  cd /root/mysql_dumps_all/
+  225  mysqldump -u root -p test > test.sql
+  ##to restore just put less than symbol
+  227  mysqldump -u root -p test < test.sql
+###automate backup
+ 228  apt-get install automysqlbackup
+  229  cd /etc/default/
+  230  ls
+  231  cat automysqlbackup
+
