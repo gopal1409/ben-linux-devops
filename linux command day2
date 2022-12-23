@@ -6,3 +6,4 @@
   142  apt update
   143  apt list --upgradable
   144  apt remove apache2
+  apt list
