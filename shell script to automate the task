@@ -1,0 +1,30 @@
+apt install vim
+##in linux by default an editor is there that is called as vi editor. 
+vim nameofthefile.sh
+###once you open the file to write anything Press the Esc button and i
+##then add this in the file
+#!/bin/bash
+#update and upgrade package
+echo -e "updating package and upgrading the system"
+sudo apt-get update -y && sudo apt-get upgrade -y
+
+#install apache
+echo -e "installing apache server"
+sudo apt install apache2 -y
+
+#start and enable apache server
+echo -e "start and enable apache service"
+sudo systemctl start apache2
+sudo systemctl enable apache2
+
+#verfiy the apache service is running or not
+echo -e "verifying apache service running or not
+sudo systemctl status apache2
+
+###to save anything in vim editor
+##3press the esc button then press :wq
+###we need to make the file executable"
+chmod +x nameofthefile.sh
+##after making the file executable you need to run it
+./nameofthefile.sh
+##finally press q to come out of the script. 
